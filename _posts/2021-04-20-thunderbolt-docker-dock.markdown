@@ -14,6 +14,12 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 Jekyll also offers powerful support for code snippets:
 
+bursty load, quit fan (fanless, 22 ambient, around 41% idle cpu)
+	Ubuntu 20.10 (server)
+  32GB
+
+
+
 {% highlight yaml %}
 network:
   ethernets:
@@ -28,6 +34,18 @@ network:
           via: 192.168.3.1
       optional: true
 {% endhighlight %}
+
+{% highlight shell %}
+ 06:59 PM ~ ] iperf -c 192.168.3.4
+------------------------------------------------------------
+Client connecting to 192.168.3.4, TCP port 5001
+TCP window size:  129 KByte (default)
+------------------------------------------------------------
+[  4] local 192.168.3.1 port 62556 connected with 192.168.3.4 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  17.7 GBytes  15.2 Gbits/sec
+{% endhighlight %}
+
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
