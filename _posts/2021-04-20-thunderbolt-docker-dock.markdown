@@ -46,6 +46,21 @@ TCP window size:  129 KByte (default)
 [  4]  0.0-10.0 sec  17.7 GBytes  15.2 Gbits/sec
 {% endhighlight %}
 
+{% highlight shell %}
+PING 192.168.3.4 (192.168.3.4): 56 data bytes
+64 bytes from 192.168.3.4: icmp_seq=0 ttl=64 time=0.526 ms
+64 bytes from 192.168.3.4: icmp_seq=1 ttl=64 time=0.496 ms
+64 bytes from 192.168.3.4: icmp_seq=2 ttl=64 time=0.475 ms
+64 bytes from 192.168.3.4: icmp_seq=3 ttl=64 time=0.471 ms
+64 bytes from 192.168.3.4: icmp_seq=4 ttl=64 time=0.455 ms
+64 bytes from 192.168.3.4: icmp_seq=5 ttl=64 time=0.441 ms
+^C
+--- 192.168.3.4 ping statistics ---
+6 packets transmitted, 6 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.441/0.477/0.526/0.028 ms
+{% endhighlight %}
+
+
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
